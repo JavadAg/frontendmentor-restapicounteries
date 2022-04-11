@@ -25,12 +25,12 @@ const Countries = ({ region, fetchData, filteredCountry }) => {
           state={country}
           key={country.alpha3Code}
         >
-          <div className="flex flex-col  h-[350px]  bg-white dark:bg-DarkBlue cursor-pointer rounded-md hover:-translate-y-2 hover:duration-500 shadow-md">
+          <div className="flex flex-col h-[350px]  bg-white dark:bg-DarkBlue cursor-pointer rounded-md hover:-translate-y-2 hover:duration-500 shadow-md">
             <div className="h-[170px]">
               <img
                 alt={country.name}
                 src={country.flags.svg}
-                className="rounded-t-md  w-full max-h-full  object-contain sm:object-cover "
+                className="rounded-t-md w-full max-h-full object-cover"
               />
             </div>
             <div className="flex flex-col justify-center pl-6 pt-6 space-y-0.5">
