@@ -15,7 +15,7 @@ const Navbar = ({ theme, setTheme }) => {
           Where in the world?
         </Link>
         <div className=" pr-5 ">
-          <button onClick={darkMode}>
+          <button onClick={darkMode} aria-label="darkmode">
             {theme ? (
               <svg
                 className="w-8 h-8 md:w-10 md:h-10"

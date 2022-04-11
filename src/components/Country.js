@@ -10,6 +10,7 @@ const Country = ({ getCountryborder }) => {
   return (
     <div className="bg-VeryLightGray dark:bg-VeryDarkBlue sm:h-screen min-h-screen flex flex-col sm:px-10 sm:pt-8  ">
       <button
+        aria-label="back"
         className="bg-white dark:bg-DarkBlue dark:hover:bg-gray-700 flex shadow-md items-center justify-center gap-2 w-24 font-light text-sm h-8 ml-7 mt-10 mb-10 rounded-md sm:w-28 hover:bg-gray-100 duration-500 "
         onClick={() => navigate(-1)}
       >
@@ -100,7 +101,7 @@ const Country = ({ getCountryborder }) => {
                           rounded-sm justify-center items-center text-center sm:w-20 overflow-hidden hover:bg-gray-100 duration-500"
                           state={borderCountry}
                           key={country}
-                          to={`/country/${borderCountry.name}`}
+                          to={`/country/${borderCountry.alpha3Code}`}
                         >
                           {borderCountry.name}
                         </Link>

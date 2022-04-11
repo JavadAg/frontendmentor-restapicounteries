@@ -14,9 +14,9 @@ const Filter = ({ setRegion, fetchData }) => {
   return (
     <div className="h-12 w-48 flex justify-center items-center bg-white dark:bg-DarkBlue rounded-md shadow-sm">
       <select
+        aria-label="label for the select"
         className="bg-white dark:bg-DarkBlue  rounded-md h-12 text-xs w-40 focus-visible:outline-none sm:text-sm sm:font-light"
         onChange={(e) => setFilter(e.target.value)}
-        placeholder="Filter by Region"
       >
         <option value="All" defaultValue>
           Filter by Region

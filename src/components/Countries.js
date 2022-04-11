@@ -21,7 +21,7 @@ const Countries = ({ region, fetchData, filteredCountry }) => {
     <div className=" grid grid-cols-1 gap-10 justify-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 sm:gap-16">
       {items?.map((country) => (
         <Link
-          to={`/country/${country.name}`}
+          to={`/country/${country.alpha3Code}`}
           state={country}
           key={country.alpha3Code}
         >
